@@ -1,0 +1,75 @@
+Summary of Today's Work
+1. Project Setup and Database:
+You created a MySQL database called evidence_db using XAMPP.
+
+We discussed the required tables for your project (users, cases, evidence, audit_logs, roles, user_roles, optional).
+
+You confirmed your tables are created in MySQL with no password on root user.
+
+2. Spring Boot Configuration:
+You shared your application.properties with correct MySQL datasource URL, username (root), and no password.
+
+Dependencies in pom.xml were reviewed to include JPA, MySQL connector, security, MongoDB, etc.
+
+We confirmed the setup should allow your Spring Boot app to connect to the MySQL database.
+
+3. Build Tools Issue:
+You tried to run mvn clean install but your system did not recognize the mvn command.
+
+You confirmed Maven was not installed on your Windows system.
+
+I gave you a detailed manual installation guide for Apache Maven on Windows, including:
+
+Downloading Maven binary zip.
+
+Extracting it to a folder.
+
+Setting MAVEN_HOME and updating Path environment variables.
+
+Verifying Maven installation via mvn -version.
+
+4. Current Status:
+You have downloaded Maven but have not completed the setup yet.
+
+You need to finish the Maven manual installation and verify it works.
+
+Once Maven works, you will be able to run:
+
+nginx
+Copy
+Edit
+mvn clean install
+Then you need to rebuild your IntelliJ project and Invalidate Caches / Restart to make sure IntelliJ picks up all changes.
+
+Where We Stopped:
+You are at the Maven installation step.
+
+Next step is to complete Maven setup on your Windows machine.
+
+After that, run mvn clean install to build the project.
+
+Then Invalidate Caches / Restart IntelliJ to refresh the IDE environment.
+
+Project Progress Estimate:
+Stage	Status	% Completed (Approx.)
+Database design & creation	Done	20%
+Spring Boot project setup	Done (basic)	25%
+Application properties & dependencies configured	Done	20%
+Maven build setup	Partial	10%
+Code development (Entities, Repositories, Services)	In progress	15%
+Security and authentication	Planned	5%
+UI / Frontend integration	Planned	5%
+Testing and Deployment	Planned	0%
+
+Next Steps for You:
+Finish manual Maven installation on your PC.
+
+Open a new terminal and run mvn -version to confirm Maven works.
+
+In your project folder, run mvn clean install to build the project.
+
+In IntelliJ IDEA:
+
+Go to File → Invalidate Caches / Restart → Invalidate and Restart.
+
+Continue coding your entities, repositories, and services.
